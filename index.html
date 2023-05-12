@@ -54,7 +54,7 @@
             <div class="button_wrapper">
                 <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-house"></i><span class="d-none d-lg-flex px-2">Home</span></button>
                 <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-flex px-2">Stats</span></button>
-                <button type="button" class="btn btn-dark d-flex align-items-center" style="background-color:transparent" ><i class="fa-solid fa-signal"></i><span class="d-none d-lg-flex px-2" >Signals</span></button>
+                <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-flex px-2" >Signals</span></button>
             </div>
 
             <div class="settings_div">
@@ -67,23 +67,97 @@
             <section class="main_header bg-primary text-white px-3 py-4 d-flex justify-content-between flex-column flex-sm-row ">
 
                 <!-- OFFCANVAS -->
+                <div class="order-sm-3 me-5 d-flex">
+                    <p class="me-4">Nuovo studente</p>
+                    <button class="btn btn-primary btn-outline-light align-self-start" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><i class="fa-solid fa-plus"></i></button>
+                    <div class="offcanvas offcanvas-end text-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Inserisci un nuovo utente</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                
+                        <div class="offcanvas-body">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="insertName" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="insertName" aria-label="First name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="insertSurname" class="form-label">Cognome</label>
+                                    <input type="text" class="form-control" is="insertSurname" aria-label="Last name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                                    <input type="text" class="form-control" id="inputAddress" >
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">Città</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">Stato</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Scegli...</option>
+                                        <option>Italia</option>
+                                        <option>Giappone</option>
+                                        <option>Spagna</option>
+                                        <option>Polonia</option>
+                                        <option>Brado</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">CAP</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Seleziona per proseguire
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                    <button type="submit" class="btn btn-warning">Svuota</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
 
                 <div class="order-sm-1">
                     <div class="d-flex align-items-end">
                         <h2 class="pb-0">Boolean</h2>
-                        <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
+                        <span class="badge text-bg-primary badge-primary p-3">Piano blaze</span>
                     </div>
                     <div class="d-flex">
                         <div class="d-flex">
-                            <span class="badge rounded-pill text-bg-primary">3 app</span>
+                            <span class="badge text-bg-primary badge-primary">3 app</span>
                             <span><i class="fa-solid fa-angles-right fa-sm"></i></span>
                         </div>
                         <div>
                             <span class="d-lg-none"><i class="fa-solid fa-plus fa-sm"></i></span>
                             <div class="d-none d-lg-flex ">
-                                <span class="badge rounded-pill text-bg-primary">Boolean mobile app</span>
-                                <span class="badge rounded-pill text-bg-primary">Boolean web app</span>
-                                <span class="badge rounded-pill text-bg-primary">Boolean blog app</span>
+                                <span class="badge text-bg-primary badge-primary">Boolean mobile app</span>
+                                <span class="badge text-bg-primary badge-primary">Boolean web app</span>
+                                <span class="badge text-bg-primary badge-primary">Boolean blog app</span>
                             </div>
                         </div>
                     </div>
@@ -91,7 +165,7 @@
 
                 <div class="order-sm-2">
                   <p>Studenti online negli ultimi 30 minuti</p>
-                  <h2>125</h2>
+                  <h3>125</h3>
                 </div>
 
             </section>
